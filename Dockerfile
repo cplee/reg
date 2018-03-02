@@ -27,4 +27,3 @@ FROM scratch
 
 COPY --from=builder /usr/bin/reg /usr/bin/reg
 COPY --from=builder /etc/ssl/certs/ /etc/ssl/certs
-
