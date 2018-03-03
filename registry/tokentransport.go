@@ -120,7 +120,7 @@ func (r *Registry) Token(url string) (string, error) {
 
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return nil, err
+		return "", err
 	}
 
 	resp, err := r.Client.Do(req)
